@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmay Lakra's Portfolio</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #8a948d;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 6007;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            background: #b6eff5;
+            color: #312c2c;
+            padding:12rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size:3rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 300px;
+            height: 450px;
+            margin-top: 2rem;
+            border: 5px solid #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Interactive Element */
+        .hero h1:hover {
+            color: #717066;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chinmay Lakra</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Hello, I'm Chinmay Lakra</h1>
+            <p>I'm a Web Developer at Amity University</p>
+            <img src="chinmay.jpg" alt="Chinmay Lakra's Photo">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chinmay Lakra. All rights reserved.</p>
+    </footer>
+</body>
+</html>
