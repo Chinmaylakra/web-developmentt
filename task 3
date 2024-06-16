@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Flow - Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Main <span class="highlight">Flow</span></h1>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="registration-form">
+                <h2>Registration Form</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required value="Aakash Rathee">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required value="random@random.com">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required value="password">
+                
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required value="9832983">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+.
+.
+.
+.
+.
+.
+.
+.
+..
+
+. css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.highlight {
+    color: #00ffb3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ccc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00ffb3;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ffb3;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc99;
+}
+javascript
+// script.js
+
+// Handle form submission
+document.getElementById('registration-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const phone = document.getElementById('phone').value;
+
+    console.log('Form Submitted');
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Phone Number:', phone);
+
+    // You can add further code here to process the form data or send it to a server
+});
